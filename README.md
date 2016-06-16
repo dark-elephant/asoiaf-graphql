@@ -1,3 +1,5 @@
+This is a modified version of https://github.com/afram/iceandfire-graphql repo with cors disabled to make it work with my simple relay client 
+
 An API of Ice and Fire GraphQL Wrapper
 =====================
 
