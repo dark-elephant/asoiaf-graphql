@@ -2,11 +2,12 @@ import 'newrelic';
 import express from 'express';
 import graphqlHTTP from 'express-graphql';
 import gotSchema from '../schema';
+import cors from 'cors';
 
 
 const app = express();
 app.set('port', (process.env.PORT || 5000));
-
+app.use(cors({origin: true, credentials: true}));
 // Requests to /graphql redirect to /
 app.all('/graphql', (req, res) => res.redirect('/'));
 
